@@ -108,11 +108,11 @@ workflows:
     - install-missing-android-tools@2.3.3:
         inputs:
             - gradlew_path: "$PROJECT_LOCATION/gradlew"
-    - android-lint@0.9.5:
-        inputs:
-        - project_location: "$PROJECT_LOCATION"
-        - module: "$MODULE"
-        - variant: "$TEST_VARIANT"
+  #  - android-lint@0.9.5:
+  #      inputs:
+   #     - project_location: "$PROJECT_LOCATION"
+   #     - module: "$MODULE"
+    #    - variant: "$TEST_VARIANT"
     - android-build@0.9.5:
         inputs:
         - variant: Debug

@@ -66,16 +66,16 @@ workflows:
     - change-android-versioncode-and-versionname@1.1.1:
         inputs:
         - build_gradle_path: "$PROJECT_LOCATION/$MODULE/build.gradle"
-    - android-lint@0.9.5:
-        inputs:
-        - project_location: "$PROJECT_LOCATION"
-        - module: "$MODULE"
-        - variant: "$TEST_VARIANT"
-    - android-unit-test@0.9.3:
-        inputs:
-        - project_location: "$PROJECT_LOCATION"
-        - module: "$MODULE"
-        - variant: "$TEST_VARIANT"
+#    - android-lint@0.9.5:
+ #       inputs:
+  #      - project_location: "$PROJECT_LOCATION"
+ #       - module: "$MODULE"
+  #      - variant: "$TEST_VARIANT"
+#    - android-unit-test@0.9.3:
+#        inputs:
+ #       - project_location: "$PROJECT_LOCATION"
+ #       - module: "$MODULE"
+#        - variant: "$TEST_VARIANT"
     - android-build@0.9.5:
         inputs:
         - project_location: "$PROJECT_LOCATION"
@@ -114,7 +114,7 @@ workflows:
    #     - module: "$MODULE"
     #    - variant: "$TEST_VARIANT"
     - android-build@0.9.5:
-        inputs:
+       inputs:
         - variant: Debug
         - project_location: "$PROJECT_LOCATION"
     - deploy-to-bitrise-io@1.3.18: {}
